@@ -85,10 +85,10 @@ main {
         justify-content: space-between;
         width: 60vw;
     }
-    main {
-        /* display: flex;
-        flex-direction: row; */
-    }
+    /* main {
+        display: flex;
+        flex-direction: row;
+    } */
     .title {
         right: -500px;
     }
