@@ -1,0 +1,99 @@
+nav { 
+    padding: 0 20px;
+    width: 120vw;
+}
+
+.hop {
+    width: 80px;
+    animation-name: hop;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+@keyframes hop {
+    0% {
+        transform: translate(0, 0);
+    }
+    10% {
+        transform: translate(0, -10px);
+    }
+    20% {
+        transform: translate(0, 0);
+    }
+    30% {
+        transform: translate(0, -20px);
+    }
+    40% {
+        transform: translate(0, 0);
+    }
+    /* 100% {
+        transform: translate(0, 0);
+    } */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+}
+
+ul {
+    height: 17px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+ul:hover {
+    height: 200px;
+}
+
+li{
+    height: 30px;
+}
+
+.title {
+    position: relative;
+    right: 0;
+    transition: 1s;
+}
+
+.logo {
+    position: relative;    
+    width: 0px;
+    transition: 1s;
+}
+
+.description {
+    position: relative;    
+
+}
+
+
+main {
+    transition: 3s;
+    /* display: flex;
+    flex-direction: column */
+}
+
+@media(min-width: 600px) {
+    h2 {
+        display: none;
+    }
+    ul {
+        overflow: visible;
+        display: flex;
+        justify-content: space-between;
+        width: 60vw;
+    }
+    main {
+        /* display: flex;
+        flex-direction: row; */
+    }
+    .title {
+        right: -500px;
+    }
+    .logo {
+        position: relative;    
+        width: 300px;
+    }
+}
